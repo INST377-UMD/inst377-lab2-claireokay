@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <title>RA Claire's Get to Know You</title>
+    <style>
+        body {
+            background-color: thistle;
+            align-items: center;
+        }
+        </style>
+    <body>
+        <h1>RA Claire's Get to Know You Form</h1>
+        <form name="contactForm" method="get" action="INST377-Week2_FormSuccess.html">
+            <div class="residentInfo">
+                <!-- Resident Information -->
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" required>
+                <br>
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" required>
+                <br>
+                <hr>
+            </div>
+    
+            <!-- Unit Info -->
+            <label for="unitNumber">Unit Number:</label>
+            <input type="number" id="unitNumber"  maxlength="5" required>
+            <br>
+            <label for="bedroomLetter">Bedroom Letter:</label>
+            <select id="bedroomLetter" name="letter">
+                <option hidden disabled selected>-- Select Option --</option>
+                <option value="a">A</option>
+                <option value="b">B</option>
+                <option value="c">C</option>
+                <option value="d">D</option>
+                <option value="e">E</option>
+            </select>
+            <br>
+    
+            <!-- Address -->
+            <h3>Address</h3>
+            <label for="street">Street: </label>
+            <input type="text" id="street"><br>
+            <label for="city">City: </label>
+            <input type="text" id="city"><br>
+            <label for="state">State: </label>
+            <input type="text" id="state" maxlength="2"><br>
+            <label for="zip">Zip: </label>
+            <input type="text" id="zip" maxlength="5"><br>
+            <br>
+            <hr>
+    
+            <!-- University Affiliation -->
+            <label for="university">What University are you affiliated with: </label>
+            <select id="university" name="university">
+                <option hidden disabled selected>-- Select Option --</option>
+                <option value="umd">UMD</option>
+                <option value="umbc">UMBC</option>
+                <option value="other">Other</option>
+            </select>
+            <br>
+    
+            <!-- Email -->
+            <label for="email">What is the best email to reach you at? </label>
+            <input type="email" id="email" placeholder="test@gmail.com" required>
+            <br>
+            <hr>
+            <input type="submit" value="Submit!">
+        </form>
+    </body>
+</html>
