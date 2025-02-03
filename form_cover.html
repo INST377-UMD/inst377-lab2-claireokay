@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+    <title>RA Claire's Get to Know You</title>
+    <style>
+        body {
+            background-color: thistle;
+            align-items: center;
+        }
+        #inputSubmit {
+            width: 60px;
+            height: 30px;
+            background-color: black;
+            color: white;
+        }
+        #inputSubmit:hover{
+            background-color: white;
+            color: black;
+        }
+        .residentInfo {
+            margin: 10px;
+        }
+
+        .residentInfo label{
+            font-size: 18px;
+        }
+        </style>
+    <body>
+        <h1>RA Claire's Get to Know You Form</h1>
+        <form name="contactForm" method="get" action="INST377-Week2_FormSuccess.html">
+            <div class="residentInfo">
+                <!-- Resident Information -->
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" required>
+                <br>
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" required>
+                <br>
+                <hr>
+            </div>
+    
+            <!-- Unit Info -->
+            <label for="unitNumber">Unit Number:</label>
+            <input type="number" id="unitNumber"  maxlength="5" required>
+            <br>
+            <label for="bedroomLetter">Bedroom Letter:</label>
+            <select id="bedroomLetter" name="letter">
+                <option hidden disabled selected>-- Select Option --</option>
+                <option value="a">A</option>
+                <option value="b">B</option>
+                <option value="c">C</option>
+                <option value="d">D</option>
+                <option value="e">E</option>
+            </select>
+            <br>
+    
+            <!-- Personal Information -->
+            <h3>About You</h3>
+            <label for="major">Major: </label>
+            <input type="text" id="major"><br>
+            <label for="city">Hometown: </label>
+            <input type="text" id="city"><br>
+            <label for="funFact">Fun Fact: </label>
+            <input type="text" id="funFact"><br>
+            <br>
+            <hr>
+    
+            <!-- Email -->
+            <label for="email"> University Email </label>
+            <input type="email" id="email" placeholder="test@umd.edu" required>
+            <br>
+            <hr>
+            <input type="submit" value="Submit" id="inputSubmit">
+        </form>
+    </body>
+</html>
