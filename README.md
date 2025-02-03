@@ -3,5 +3,4 @@
 
 # Name (Please Input your name): Claire Knorr
 
-# Comments: This is a form I would give my residents to introduce themselves to me 
-# as their RA.
+# Comments: This is a form I would give my residents to introduce themselves to me as their RA.
